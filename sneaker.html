@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sneakers World</title>
+	<link rel="stylesheet" href="../css/sneakers.css">
+</head>
+<body>
+	<header class="header">
+		<!-- <nav> -->
+		<ul>
+			<li>
+				<a href="#nike">Nike</a>
+				<a href="#adidas">Adidas</a>
+				<a href="#fila">Fila</a>
+			</li>
+		</ul>
+		<!-- </nav> -->
+	</header>
+
+		<div class="main">
+			<h1>The World Is Yours</h1>
+			<h5>Get the updates for your favorite sneakers here.</h5>
+		</div>
+	<main>
+
+		</div>
+	<div class="content">
+		<article id="nike">
+			<section>
+				<img src="https://images.unsplash.com/photo-1580906853149-f82f7601d205?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" alt="">
+				<h3>Nike For Life</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquam voluptas aut nisi sapiente rem, quasi at illo, dolorem ducimus. Veniam doloremque temporibus incidunt corrupti obcaecati voluptatibus commodi minus, quas.</p>
+			</section>
+		</article>
+		<article id="adidas">
+			<img src="https://images.unsplash.com/photo-1561808843-7adeb9606939?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="">
+			<h3>Adidas Comumnity</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius commodi dolorem, impedit officia placeat. Ad, libero. Debitis maxime dicta fuga culpa fugiat, id sint. Saepe cum quae, veniam mollitia.</p>
+		</article>
+		<article id="fila">
+			<img src="https://images.unsplash.com/photo-1547592866-9dbb937713ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80" alt="">
+			<h3>The Compact Fila</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Non, tempora sunt aut. Inventore provident quis possimus pariatur ad minima recusandae, labore accusantium iste, ut cum tenetur, libero maiores consectetur culpa.</p>
+		</article>
+	</div>
+	<aside>
+		<div class="aside">
+		<img src="https://images.unsplash.com/photo-1539874202413-c1f47b33169f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
+		<table>
+			<tr>
+				<th>Name :</th>
+				<td>Sneakers Addict</td>
+			</tr>
+			<tr>
+				<th rowspan="2">Favorite :</th>
+				<td>Nike Air Jordan</td>
+			</tr>
+			<tr>
+				<td>Adidas EQT Bask ADV</td>
+			</tr>
+			<tr>
+				<th>Country :</th>
+				<td>USA</td>
+			</tr>
+		</table>
+		</div>
+	</aside>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2020. Novelia Arum</p>
+	</footer>
+
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<script>
+		$(window).scroll(function() {
+			let scroll = $(window).scrollTop();
+			if (scroll >= 600) {
+				$(".header").addClass("darkHeader");
+			} else {
+				$(".header").removeClass("darkHeader");
+			}
+		});
+		
+	</script>
+</body>
+</html>
