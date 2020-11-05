@@ -4,28 +4,39 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sneakers World</title>
-	<link rel="stylesheet" href="../css/sneakers.css">
+	<link rel="stylesheet" href="./css/sneakers.css">
 </head>
 <body>
-	<header class="header">
+	<nav>
 		<!-- <nav> -->
-		<ul>
-			<li>
-				<a href="#nike">Nike</a>
-				<a href="#adidas">Adidas</a>
-				<a href="#fila">Fila</a>
-			</li>
-		</ul>
+		<input type="checkbox" id="nav" class="hidden">
+		<label for="nav" class="nav-btn">
+			<i></i>
+			<i></i>
+			<i></i>
+		</label>
+		<div class="navbar">
+			<ul>
+				<li>
+					<a href="#nike">Nike</a>
+				</li>
+				<li>
+					<a href="#adidas">Adidas</a>
+				</li>
+				<li>
+					<a href="#fila">Fila</a>
+				</li>
+			</ul>
+		</div>
 		<!-- </nav> -->
+	</nav>
+
+	<header class="header">
+		<h1>The World Is Yours</h1>
+		<h5>Get the updates for your favorite sneakers here.</h5>
 	</header>
 
-		<div class="main">
-			<h1>The World Is Yours</h1>
-			<h5>Get the updates for your favorite sneakers here.</h5>
-		</div>
 	<main>
-
-		</div>
 	<div class="content">
 		<article id="nike">
 			<section>
@@ -72,17 +83,7 @@
 		<p>Copyright &copy; 2020. Novelia Arum</p>
 	</footer>
 
-	<script src="../js/jquery-3.5.1.min.js"></script>
-	<script>
-		$(window).scroll(function() {
-			let scroll = $(window).scrollTop();
-			if (scroll >= 600) {
-				$(".header").addClass("darkHeader");
-			} else {
-				$(".header").removeClass("darkHeader");
-			}
-		});
-		
-	</script>
+	<script src="./js/jquery-3.5.1.min.js"></script>
+	<script src="./js/sneakers.js"></script>
 </body>
 </html>
